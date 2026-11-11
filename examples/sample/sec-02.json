@@ -1,0 +1,59 @@
+{
+  "title": "2. Method and Results",
+  "title_zh": "方法与结果",
+  "blocks": [
+    {
+      "id": "p4",
+      "en": "We assigned 126 second-year undergraduates at one university to three conditions: functional annotation, free highlighting, and rereading. All participants read the same 2,400-word philosophical essay and, two days later, drew an argument map from memory, which two raters scored blind to condition.",
+      "zh": "我们把同一所大学的 126 名二年级本科生分到三种条件下：功能批注、自由划线和重读。所有被试阅读同一篇 2400 词的哲学论文，两天后凭记忆画出论证图，由两名不知分组情况的评分者打分。",
+      "marks": [
+        {
+          "text": "126 second-year undergraduates at one university",
+          "kind": "method"
+        },
+        {
+          "text": "two raters scored blind to condition",
+          "kind": "method"
+        }
+      ],
+      "note": {
+        "function": "交代研究设计",
+        "role": "把 ¶3 的主张变成可检验的比较：功能批注对照划线与重读，因变量正是 ¶2 界定的论证图。",
+        "technique": "设了两个对照组。划线组用来区分“任何批注都有用”和“只有功能批注有用”，这正是论点里“only when”所需要的对比。",
+        "doubt": "样本来自“one university”的二年级学生，材料只有一篇哲学论文，结论能否推到其他读者和其他文体，文中没有讨论。"
+      }
+    },
+    {
+      "style": "formula",
+      "en": "score = (correct claims + correct support links) / (total claims + total support links)"
+    },
+    {
+      "type": "figure",
+      "id": "t1",
+      "label": "Table 1",
+      "caption_en": "Table 1. Mean argument-map scores by condition (standard deviations in parentheses).",
+      "caption_zh": "表 1 各条件下论证图得分的均值（括号内为标准差）。",
+      "image": "table1.png"
+    },
+    {
+      "id": "p5",
+      "en": "Functional annotators scored 0.71 on average, against 0.52 for highlighters and 0.49 for rereaders. The difference between highlighting and rereading was not statistically significant, whereas functional annotation outperformed both (p < .01).",
+      "zh": "功能批注组平均得分 0.71，划线组为 0.52，重读组为 0.49。划线与重读之间的差异未达到统计显著，而功能批注组显著高于另外两组（p < .01）。",
+      "marks": [
+        {
+          "text": "0.71 on average, against 0.52 for highlighters and 0.49 for rereaders",
+          "kind": "evidence"
+        },
+        {
+          "text": "not statistically significant",
+          "kind": "evidence"
+        }
+      ],
+      "note": {
+        "function": "提供证据",
+        "role": "全文的核心证据，同时支撑 ¶3 的两半主张：功能批注有效（0.71 对 0.49），单纯划线无效（0.52 对 0.49 不显著）。",
+        "technique": "把“划线与重读无显著差异”单独写成一句，直接对应论点的后半句，读者不必自己从数字里推。"
+      }
+    }
+  ]
+}

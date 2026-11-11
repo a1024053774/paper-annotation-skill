@@ -1,0 +1,27 @@
+{
+  "title": "Opening",
+  "title_zh": "开篇（原文无小标题）",
+  "blocks": [
+    {
+      "id": "p2",
+      "from": "Published research findings are sometimes refuted",
+      "zh": "已发表的研究发现有时会被后来的证据推翻，随之而来的是困惑和失望。从临床试验、传统流行病学研究 [1–3] 到最新的分子研究 [4,5]，各类研究设计中都能见到这种推翻和争议。越来越多的人担心，在现代研究中，假的发现可能占已发表研究主张的多数，甚至绝大多数 [6–8]。不过，这并不令人意外。可以证明，大多数声称的研究发现是假的。本文将考察影响这一问题的关键因素，以及由此得出的若干推论。",
+      "marks": [
+        {
+          "text": "sometimes refuted by subsequent evidence",
+          "kind": "evidence"
+        },
+        {
+          "text": "It can be proven that most claimed research findings are false",
+          "kind": "thesis"
+        }
+      ],
+      "note": {
+        "function": "引出问题并亮出论点",
+        "role": "从“研究发现常被推翻”这一经验现象出发，直接给出全文主张。后文的建模三节是这句“可以证明”的兑现，“多数研究设计”一节是它的结论。",
+        "technique": "先引用别人的担忧（[6–8]），再说“这并不令人意外”，把一个经验上的疑虑升级为可以推导的命题。",
+        "doubt": "“It can be proven”承诺的是证明。后文给出的是一个概率模型加上作者设定的参数组合（表 4），结论成立与否取决于这些参数是否符合现实，这比数学意义上的“证明”弱。"
+      }
+    }
+  ]
+}

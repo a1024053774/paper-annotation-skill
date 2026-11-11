@@ -1,0 +1,121 @@
+{
+  "title": "How Can We Improve the Situation?",
+  "title_zh": "怎样改善这种状况？",
+  "blocks": [
+    {
+      "id": "p24",
+      "from": "Is it unavoidable that most research findings are false",
+      "zh": "多数研究发现为假是不可避免的吗？还是说我们可以改善这种状况？一个主要的难题是，对任何研究问题，都不可能百分之百确定地知道真相是什么。就此而言，纯粹的“金”标准是达不到的。不过，有几种办法可以提高研究后概率。",
+      "marks": [
+        {
+          "text": "it is impossible to know with 100% certainty what the truth is",
+          "kind": "concession"
+        },
+        {
+          "text": "there are several approaches to improve the post-study probability",
+          "kind": "thesis"
+        }
+      ],
+      "note": {
+        "function": "从诊断转向对策",
+        "role": "全文由“是什么”转入“怎么办”。以下三段各提一类办法，分别对应模型的参数：效能、偏倚与多团队、研究前比率 R。",
+        "technique": "先承认“金标准达不到”，对策的目标由此从“找到真相”降为“提高研究后概率”，后面的建议都按这个较低的目标衡量。"
+      }
+    },
+    {
+      "id": "p25",
+      "from": "Better powered evidence, e.g., large studies",
+      "zh": "效能更高的证据，例如大型研究或低偏倚的荟萃分析，可能有所帮助，因为它更接近那个未知的“金”标准。不过，大型研究仍然可能有偏倚，这些偏倚应当得到承认并加以避免。而且，当前研究提出的问题数以百万、亿万计，不可能为所有问题都获得大规模证据。大规模证据应当瞄准研究前概率已经相当高的问题，这样一个显著的研究发现所带来的研究后概率才足以被视为相当确定。当大规模证据能够检验重大的概念，而不是狭窄、具体的问题时，也特别值得去获取。这时，一个阴性发现所否定的就不仅是某个具体的主张，而是整个领域或其中相当大的一部分。按照狭隘的标准来决定开展哪些大规模研究，例如为了某种药物的市场推广，在很大程度上是研究资源的浪费。此外应当注意，极大规模的研究可能更容易对一个微不足道、与零值并无实质差别的效应，得出形式上统计显著的差异 [32–34]。",
+      "marks": [
+        {
+          "text": "Better powered evidence",
+          "kind": "thesis"
+        },
+        {
+          "text": "large studies may still have biases",
+          "kind": "concession"
+        },
+        {
+          "text": "Large-scale evidence should be targeted for research questions where the pre-study probability is already considerably high",
+          "kind": "thesis"
+        },
+        {
+          "text": "a formally statistical significant difference for a trivial effect",
+          "kind": "concession"
+        }
+      ],
+      "note": {
+        "function": "对策一：提高效能",
+        "role": "对应推论 1、2。建议不是笼统地“做大研究”，而是把大研究用在 R 已经较高、或能检验整个概念的地方，把效能和 R 两个参数结合起来考虑。",
+        "technique": "每提一条建议，随即指出它的局限（大研究也有偏倚、不可能处处都做、太大了连微小效应也会显著）。建议因此显得克制，不像是万能药方。"
+      }
+    },
+    {
+      "id": "p26",
+      "from": "Second, most research questions are addressed",
+      "zh": "第二，多数研究问题都有许多团队在研究，强调任何单个团队的统计显著发现是有误导性的。重要的是证据的总体。通过提高研究标准和遏制成见来减少偏倚，也可能有帮助。不过，这可能需要科学界转变观念，而这种转变或许很难实现。在某些研究设计中，对研究进行事先注册（例如随机试验 [35]）也可能使这些努力更见成效。对于生成假设的研究，注册会是一个难题。与其对每一项生成假设的实验逐一注册，不如在领域内对数据集或研究者进行某种形式的注册或联网，这可能更可行。无论如何，即使其他领域在研究注册上进展不大，制定并遵守研究方案的原则仍然可以更广泛地从随机对照试验中借鉴过来。",
+      "marks": [
+        {
+          "text": "What matters is the totality of the evidence",
+          "kind": "thesis"
+        },
+        {
+          "text": "upfront registration of studies",
+          "kind": "concept"
+        },
+        {
+          "text": "Registration would pose a challenge for hypothesis-generating research",
+          "kind": "concession"
+        }
+      ],
+      "note": {
+        "function": "对策二：看证据总体，减少偏倚",
+        "role": "同时回应推论 6（多团队）和推论 4、5（偏倚）。“看证据的总体”正是多团队公式所假设的反面：那里人们只看一项显著结果，这里要求把所有研究放在一起看。",
+        "technique": "从已有成功先例的做法（随机试验注册）出发，再讨论如何迁移到难以注册的探索性研究，建议有现实依托。",
+        "doubt": "这一段承认把多项研究合起来看可以解决问题，等于承认“研究越多越不可信”只在孤立解读时成立。但推论 6 的表述没有带上这个条件。"
+      }
+    },
+    {
+      "id": "p27",
+      "from": "Finally, instead of chasing statistical significance",
+      "zh": "最后，与其追逐统计显著性，我们更应当加深对研究工作所处的 R 值范围（即研究前比率）的了解 [10]。在做实验之前，研究者应当考虑，自己认为所检验的关系为真而非为假的机会有多大。这样，那些被推测较高的 R 值有时就可以得到查证。如上所述，只要伦理上可以接受，就应当针对那些被认为相对确立的研究发现开展偏倚极小的大型研究，看它们究竟有多少能够得到证实。我猜测，有几项公认的“经典”结论会通不过这一检验 [36]。",
+      "marks": [
+        {
+          "text": "we should improve our understanding of the range of R values",
+          "kind": "thesis"
+        }
+      ],
+      "note": {
+        "function": "对策三：估计研究前比率",
+        "role": "回到模型里影响最大的参数 R（推论 3）。全文的批评靠 R 立论，这里把它转化为研究者在实验前应当自问的问题。",
+        "technique": "末句“我猜测”是一个可以被检验的预测，并引用了作者自己同年的经验研究 [36]，把一篇理论文章与实证工作接了起来。",
+        "doubt": "建议研究者自行估计 R，但没有给出估计的方法。专栏 1 中的 R 能数出来是因为全基因组研究的候选数目是确定的，多数领域没有这个条件。"
+      }
+    },
+    {
+      "id": "p28",
+      "from": "Nevertheless, most new discoveries will continue",
+      "zh": "尽管如此，多数新发现仍将来自研究前比率很低或极低的生成假设型研究。因此我们应当承认，单项研究报告中的统计显著性检验只呈现了部分图景，因为我们并不知道在这份报告之外、在整个相关领域里已经做过多少检验。尽管关于多重检验校正的统计学文献很多 [37]，但通常无从得知，在一项被报告的研究发现之前，报告的作者或其他研究团队已经做过多少数据捕捞。即使这一点可以查明，它也不能告诉我们研究前比率是多少。因此，不可避免地要对相关研究领域和研究设计所探查的关系中预计有多少为真，作出近似的假定。更大的领域或许能为估计单个研究项目的这一概率提供一些指引。从邻近领域查出的偏倚中得到的经验也值得借鉴。尽管这些假定带有相当的主观性，它们在解读研究主张并把这些主张放回背景之中时仍然非常有用。",
+      "marks": [
+        {
+          "text": "most new discoveries will continue to stem from hypothesis-generating research with low or very low pre-study odds",
+          "kind": "concession"
+        },
+        {
+          "text": "statistical significance testing in the report of a single study gives only a partial picture",
+          "kind": "thesis"
+        },
+        {
+          "text": "Even though these assumptions would be considerably subjective",
+          "kind": "concession"
+        }
+      ],
+      "note": {
+        "function": "总结并承认局限",
+        "role": "全文的收束。承认低 R 的探索性研究不可取代，把结论落在解读方式上：单项研究的显著性只是部分图景，必须结合对 R 和偏倚的估计。这与开篇批评“只凭 p 值解读”首尾呼应。",
+        "technique": "结尾没有重申“多数发现为假”，而是提出一种读研究的方法，并主动承认它有主观性。全文从一个刺眼的断言开始，在一个温和的建议上结束。",
+        "doubt": "末句承认对 R 和偏倚的假定“带有相当的主观性”。表 4 的结论正是由这类假定算出来的，这一承认因此同样适用于全文的核心主张，而标题和开篇用的是确定的语气。"
+      }
+    }
+  ]
+}

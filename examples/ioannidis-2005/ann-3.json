@@ -1,0 +1,178 @@
+[
+  {
+    "title": "Most Research Findings Are False for Most Research Designs and for Most Fields",
+    "title_zh": "对多数研究设计和多数领域而言，多数研究发现是假的",
+    "items": [
+      {
+        "p": "In the described framework, a PPV exceeding 50%",
+        "zh": "在上述框架下，PPV 要超过 50% 相当困难。表 4 给出了模拟结果：利用前面针对效能、真实关系与非真实关系之比以及偏倚推导出的公式，计算了几类可能代表特定研究设计和情境的情形。一项实施良好、效能充足的随机对照试验，如果干预有效的研究前概率为 50%，其发现最终约有 85% 的时候为真。对高质量随机试验所做的验证性荟萃分析，表现预计大致相当：潜在偏倚可能有所增加，但与单项随机试验相比，效能和研究前概率更高。相反，如果荟萃分析汇总的是结论不明确的研究，用合并来“弥补”单项研究效能低的问题，那么当 R ≤ 1:3 时，其发现很可能为假。效能不足的早期临床试验，研究发现大约四次里有一次为真，如果存在偏倚，这个比例还会更低。探索性的流行病学研究表现更差，效能不足时尤其如此；但即使是效能充足的流行病学研究，如果 R = 1:10，其发现为真的机会也可能只有五分之一。最后，在大规模检验的发现导向型研究中，被检验的关系数是真实关系数的 1,000 倍（例如检验 30,000 个基因，其中 30 个可能是真正的致病基因）[30,31]，即使实验室方法、统计方法、结局指标及其报告已相当规范、偏倚降到很低，每个被声称的关系的 PPV 仍然极低。",
+        "marks": [
+          { "text": "a PPV exceeding 50% is quite difficult to get", "kind": "thesis" },
+          { "text": "simulations using the formulas", "kind": "method" },
+          { "text": "eventually true about 85% of the time", "kind": "evidence" },
+          { "text": "true about one in four times", "kind": "evidence" },
+          { "text": "PPV for each claimed relationship is extremely low", "kind": "evidence" }
+        ],
+        "note": {
+          "function": "给出核心结论",
+          "role": "全文主张的落点。开篇说“可以证明多数发现为假”，这里用表 4 的九种情形兑现：只有前两种的 PPV 超过 50%。",
+          "technique": "从最可靠的设计（大型随机对照试验，85%）一路排到最不可靠的（高通量筛查，千分之一），形成一条下行的阶梯。读者会自然地把自己所在的领域放到某一级上。",
+          "doubt": "表 4 中每一行的效能、R 和 u 都是作者设定的，原文的说法是“可能代表”（may be characteristic of），没有引用对这些参数的实际估计。“多数领域的多数发现为假”要成立，还需要知道现实中的研究在这九行之间如何分布，以及各行的参数是否取得合理，这两点文中都没有论证。按公式复算，表中九个 PPV 与所给参数是一致的，问题在参数的来源，不在计算。"
+        }
+      },
+      {
+        "type": "figure",
+        "id": "t4",
+        "label": "Table 4",
+        "image": "table4.png",
+        "caption_en": "Table 4. PPV of Research Findings for Various Combinations of Power (1 − β), Ratio of True to Not-True Relationships (R), and Bias (u)",
+        "caption_zh": "表 4 效能（1 − β）、真实关系与非真实关系之比（R）和偏倚（u）取不同组合时研究发现的 PPV",
+        "note": {
+          "function": "呈现核心证据",
+          "role": "标题论点的直接依据。九行中只有两行（效能充足的随机对照试验、高质量试验的验证性荟萃分析）的 PPV 高于 0.5。",
+          "technique": "每一行都配了一个具体的研究类型作“实例”，抽象的参数组合由此变成读者认得出的日常研究。",
+          "doubt": "表注说明 PPV 是按单项研究、α = 0.05 计算的，没有用到多团队公式。偏倚 u 的取值从 0.10 到 0.80，其中 0.80 意味着本不显著的分析有八成被报告为发现，文中没有给出取这么高的依据。"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Claimed Research Findings May Often Be Simply Accurate Measures of the Prevailing Bias",
+    "title_zh": "所谓的研究发现往往可能只是对通行偏倚的准确测量",
+    "items": [
+      {
+        "p": "As shown, the majority of modern biomedical research",
+        "zh": "如前所示，现代生物医学研究大多是在真实发现的研究前概率和研究后概率都很低的领域里进行的。假设在某个研究领域，根本没有任何真实的发现有待揭示。科学史告诉我们，过去的科学努力常常耗费在那些完全没有产出真实科学信息的领域里，至少按我们今天的认识是如此。在这样一个“零领域”（null field）里，理想情况下，没有偏倚时所有观察到的效应量都应围绕零值随机波动。观察到的发现偏离纯粹偶然所预期的程度，就完全是对通行偏倚的度量。",
+        "marks": [
+          { "text": "Let us suppose that in a research field there are no true findings at all to be discovered", "kind": "method" },
+          { "text": "null field", "kind": "concept" },
+          { "text": "a pure measure of the prevailing bias", "kind": "thesis" }
+        ],
+        "note": {
+          "function": "提出第二个论点",
+          "role": "把上一节的结论推到极端：如果一个领域的 R 等于 0，那里的全部“发现”就只能来自偏倚和偶然。这是摘要里预告的第二个结论。",
+          "technique": "用思想实验把偏倚从“干扰因素”变成“被测量的对象”：既然真实效应为零，观察到的效应就是偏倚本身的读数。",
+          "doubt": "首句“如前所示”指向表 4，但表 4 展示的是若干假设情形下的 PPV，并没有显示“现代生物医学研究大多”处在低概率区域。这一句把一个有待证明的经验判断当成了已经得到的结果。"
+        }
+      },
+      {
+        "p": "For example, let us suppose that no nutrients",
+        "zh": "例如，假设没有任何营养素或膳食模式真的是某种肿瘤发病风险的重要决定因素。再假设科学文献考察了 60 种营养素，并声称它们全都与这种肿瘤的发病风险有关，摄入量最高三分位与最低三分位相比，相对危险度在 1.2 到 1.4 之间。那么，这些所谓的效应量测量的不是别的，正是产生这批文献的过程中卷入的净偏倚。所谓的效应量其实是对净偏倚最准确的估计。由此甚至可以推出，在各个“零领域”之间，那些声称效应更强的领域（往往还伴随着对医学或公共卫生重要性的宣称），不过是偏倚最严重的领域。",
+        "marks": [
+          { "text": "let us suppose that no nutrients or dietary patterns are actually important determinants", "kind": "method" },
+          { "text": "Claimed effect sizes are in fact the most accurate estimates of the net bias", "kind": "thesis" }
+        ],
+        "note": {
+          "function": "举例说明",
+          "role": "给“零领域”一个具体的样子，承接推论 2 中对营养流行病学的怀疑。",
+          "technique": "例子是假设性的，却选了读者最容易联想到现实的营养与癌症研究。作者没有断言营养流行病学就是零领域，但读者会自己把这一步补上。",
+          "doubt": "整段建立在“假设没有任何营养素重要”之上，文中没有提供判断一个真实领域是否为零领域的办法。如果无法事先知道，这个论证就只能说明“若是零领域则如此”，不能用来评价任何具体领域。"
+        }
+      },
+      {
+        "p": "For fields with very low PPV, the few",
+        "zh": "对于 PPV 很低的领域，为数不多的真实关系不会让这幅整体图景有多大改变。即使有少数关系为真，观察到的效应的分布形态仍然能清楚地度量该领域中的偏倚。这一观念彻底颠倒了我们看待科学结果的方式。传统上，研究者看到效应大而且高度显著，会感到兴奋，把它当作重要发现的标志。而在现代研究的多数领域，效应过大、过于显著，实际上更可能是存在严重偏倚的标志。它们应当促使研究者认真而审慎地思考，自己的数据、分析和结果可能在哪里出了问题。",
+        "marks": [
+          { "text": "Even if a few relationships are true", "kind": "concession" },
+          { "text": "Too large and too highly significant effects may actually be more likely to be signs of large bias", "kind": "thesis" }
+        ],
+        "note": {
+          "function": "推广并得出实践含义",
+          "role": "把“零领域”的结论放宽到“PPV 很低的领域”，使它适用于前面表 4 后几行的情形，并给研究者一条可以操作的建议：对过大的效应先起疑。",
+          "technique": "先处理“并非完全没有真实关系”这个显而易见的反驳，再作推广。",
+          "doubt": "“现代研究的多数领域”再次依赖尚未论证的经验前提。另外，推论 2 说效应大的领域发现更可信，这里又说过大的效应更可能是偏倚的标志，两处的适用条件（真实效应大，还是在低 PPV 领域里观察到大效应）文中没有明确区分。"
+        }
+      },
+      {
+        "p": "Of course, investigators working in any field",
+        "zh": "当然，无论哪个领域的研究者，都很可能不愿接受自己投入了整个职业生涯的领域竟是一个“零领域”。然而，其他方面的证据，或者技术和实验手段的进步，最终可能导致一个科学领域的瓦解。测得一个领域的净偏倚，或许也有助于了解另一些领域里偏倚的大致范围，只要这些领域有类似的分析方法、技术和利益冲突在起作用。",
+        "marks": [
+          { "text": "investigators working in any field are likely to resist accepting", "kind": "concession" }
+        ],
+        "note": {
+          "function": "预设异议",
+          "role": "预先处理同行可能的抵触，并把“零领域”的用途从批评转为工具：一个领域的偏倚估计可以借给相邻领域参考。这为最后一节“借鉴邻近领域的偏倚”埋了伏笔。",
+          "technique": "把可能的反对意见归因于研究者的职业投入，这与推论 5 关于成见的说法一致。",
+          "doubt": "把异议解释为当事人的心理抗拒，回应的是提出异议的动机，没有回应异议的内容。一个研究者完全可能有实质理由认为自己的领域不是零领域。"
+        }
+      }
+    ]
+  },
+  {
+    "title": "How Can We Improve the Situation?",
+    "title_zh": "怎样改善这种状况？",
+    "items": [
+      {
+        "p": "Is it unavoidable that most research findings are false",
+        "zh": "多数研究发现为假是不可避免的吗？还是说我们可以改善这种状况？一个主要的难题是，对任何研究问题，都不可能百分之百确定地知道真相是什么。就此而言，纯粹的“金”标准是达不到的。不过，有几种办法可以提高研究后概率。",
+        "marks": [
+          { "text": "it is impossible to know with 100% certainty what the truth is", "kind": "concession" },
+          { "text": "there are several approaches to improve the post-study probability", "kind": "thesis" }
+        ],
+        "note": {
+          "function": "从诊断转向对策",
+          "role": "全文由“是什么”转入“怎么办”。以下三段各提一类办法，分别对应模型的参数：效能、偏倚与多团队、研究前比率 R。",
+          "technique": "先承认“金标准达不到”，对策的目标由此从“找到真相”降为“提高研究后概率”，后面的建议都按这个较低的目标衡量。"
+        }
+      },
+      {
+        "p": "Better powered evidence, e.g., large studies",
+        "zh": "效能更高的证据，例如大型研究或低偏倚的荟萃分析，可能有所帮助，因为它更接近那个未知的“金”标准。不过，大型研究仍然可能有偏倚，这些偏倚应当得到承认并加以避免。而且，当前研究提出的问题数以百万、亿万计，不可能为所有问题都获得大规模证据。大规模证据应当瞄准研究前概率已经相当高的问题，这样一个显著的研究发现所带来的研究后概率才足以被视为相当确定。当大规模证据能够检验重大的概念，而不是狭窄、具体的问题时，也特别值得去获取。这时，一个阴性发现所否定的就不仅是某个具体的主张，而是整个领域或其中相当大的一部分。按照狭隘的标准来决定开展哪些大规模研究，例如为了某种药物的市场推广，在很大程度上是研究资源的浪费。此外应当注意，极大规模的研究可能更容易对一个微不足道、与零值并无实质差别的效应，得出形式上统计显著的差异 [32–34]。",
+        "marks": [
+          { "text": "Better powered evidence", "kind": "thesis" },
+          { "text": "large studies may still have biases", "kind": "concession" },
+          { "text": "Large-scale evidence should be targeted for research questions where the pre-study probability is already considerably high", "kind": "thesis" },
+          { "text": "a formally statistical significant difference for a trivial effect", "kind": "concession" }
+        ],
+        "note": {
+          "function": "对策一：提高效能",
+          "role": "对应推论 1、2。建议不是笼统地“做大研究”，而是把大研究用在 R 已经较高、或能检验整个概念的地方，把效能和 R 两个参数结合起来考虑。",
+          "technique": "每提一条建议，随即指出它的局限（大研究也有偏倚、不可能处处都做、太大了连微小效应也会显著）。建议因此显得克制，不像是万能药方。"
+        }
+      },
+      {
+        "p": "Second, most research questions are addressed",
+        "zh": "第二，多数研究问题都有许多团队在研究，强调任何单个团队的统计显著发现是有误导性的。重要的是证据的总体。通过提高研究标准和遏制成见来减少偏倚，也可能有帮助。不过，这可能需要科学界转变观念，而这种转变或许很难实现。在某些研究设计中，对研究进行事先注册（例如随机试验 [35]）也可能使这些努力更见成效。对于生成假设的研究，注册会是一个难题。与其对每一项生成假设的实验逐一注册，不如在领域内对数据集或研究者进行某种形式的注册或联网，这可能更可行。无论如何，即使其他领域在研究注册上进展不大，制定并遵守研究方案的原则仍然可以更广泛地从随机对照试验中借鉴过来。",
+        "marks": [
+          { "text": "What matters is the totality of the evidence", "kind": "thesis" },
+          { "text": "upfront registration of studies", "kind": "concept" },
+          { "text": "Registration would pose a challenge for hypothesis-generating research", "kind": "concession" }
+        ],
+        "note": {
+          "function": "对策二：看证据总体，减少偏倚",
+          "role": "同时回应推论 6（多团队）和推论 4、5（偏倚）。“看证据的总体”正是多团队公式所假设的反面：那里人们只看一项显著结果，这里要求把所有研究放在一起看。",
+          "technique": "从已有成功先例的做法（随机试验注册）出发，再讨论如何迁移到难以注册的探索性研究，建议有现实依托。",
+          "doubt": "这一段承认把多项研究合起来看可以解决问题，等于承认“研究越多越不可信”只在孤立解读时成立。但推论 6 的表述没有带上这个条件。"
+        }
+      },
+      {
+        "p": "Finally, instead of chasing statistical significance",
+        "zh": "最后，与其追逐统计显著性，我们更应当加深对研究工作所处的 R 值范围（即研究前比率）的了解 [10]。在做实验之前，研究者应当考虑，自己认为所检验的关系为真而非为假的机会有多大。这样，那些被推测较高的 R 值有时就可以得到查证。如上所述，只要伦理上可以接受，就应当针对那些被认为相对确立的研究发现开展偏倚极小的大型研究，看它们究竟有多少能够得到证实。我猜测，有几项公认的“经典”结论会通不过这一检验 [36]。",
+        "marks": [
+          { "text": "we should improve our understanding of the range of R values", "kind": "thesis" }
+        ],
+        "note": {
+          "function": "对策三：估计研究前比率",
+          "role": "回到模型里影响最大的参数 R（推论 3）。全文的批评靠 R 立论，这里把它转化为研究者在实验前应当自问的问题。",
+          "technique": "末句“我猜测”是一个可以被检验的预测，并引用了作者自己同年的经验研究 [36]，把一篇理论文章与实证工作接了起来。",
+          "doubt": "建议研究者自行估计 R，但没有给出估计的方法。专栏 1 中的 R 能数出来是因为全基因组研究的候选数目是确定的，多数领域没有这个条件。"
+        }
+      },
+      {
+        "p": "Nevertheless, most new discoveries will continue",
+        "zh": "尽管如此，多数新发现仍将来自研究前比率很低或极低的生成假设型研究。因此我们应当承认，单项研究报告中的统计显著性检验只呈现了部分图景，因为我们并不知道在这份报告之外、在整个相关领域里已经做过多少检验。尽管关于多重检验校正的统计学文献很多 [37]，但通常无从得知，在一项被报告的研究发现之前，报告的作者或其他研究团队已经做过多少数据捕捞。即使这一点可以查明，它也不能告诉我们研究前比率是多少。因此，不可避免地要对相关研究领域和研究设计所探查的关系中预计有多少为真，作出近似的假定。更大的领域或许能为估计单个研究项目的这一概率提供一些指引。从邻近领域查出的偏倚中得到的经验也值得借鉴。尽管这些假定带有相当的主观性，它们在解读研究主张并把这些主张放回背景之中时仍然非常有用。",
+        "marks": [
+          { "text": "most new discoveries will continue to stem from hypothesis-generating research with low or very low pre-study odds", "kind": "concession" },
+          { "text": "statistical significance testing in the report of a single study gives only a partial picture", "kind": "thesis" },
+          { "text": "Even though these assumptions would be considerably subjective", "kind": "concession" }
+        ],
+        "note": {
+          "function": "总结并承认局限",
+          "role": "全文的收束。承认低 R 的探索性研究不可取代，把结论落在解读方式上：单项研究的显著性只是部分图景，必须结合对 R 和偏倚的估计。这与开篇批评“只凭 p 值解读”首尾呼应。",
+          "technique": "结尾没有重申“多数发现为假”，而是提出一种读研究的方法，并主动承认它有主观性。全文从一个刺眼的断言开始，在一个温和的建议上结束。",
+          "doubt": "末句承认对 R 和偏倚的假定“带有相当的主观性”。表 4 的结论正是由这类假定算出来的，这一承认因此同样适用于全文的核心主张，而标题和开篇用的是确定的语气。"
+        }
+      }
+    ]
+  }
+]

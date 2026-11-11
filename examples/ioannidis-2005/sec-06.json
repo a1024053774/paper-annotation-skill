@@ -1,0 +1,192 @@
+{
+  "title": "Corollaries",
+  "title_zh": "推论",
+  "blocks": [
+    {
+      "id": "p9",
+      "from": "A practical example is shown in Box 1.",
+      "zh": "专栏 1 给出了一个实际的例子。根据上述讨论，可以就研究发现确实为真的概率推出若干有意思的推论。",
+      "marks": [],
+      "note": {
+        "function": "过渡",
+        "role": "从模型转入应用。专栏 1 用具体数字演示三个公式，六条推论则把公式里的每个参数对应到科研实践中的一类情形。"
+      }
+    },
+    {
+      "id": "p10",
+      "from": "Corollary 1:",
+      "zh": "推论 1：一个科学领域开展的研究规模越小，研究发现为真的可能性越低。样本量小意味着效能低，而对上述所有函数来说，效能向 1 − β = 0.05 下降时，真实研究发现的 PPV 随之下降。因此，在其他因素相同的情况下，开展大型研究的领域，例如心脏病学的随机对照试验（随机分组的受试者达数千人）[14]，其研究发现比小型研究为主的领域更可能为真，后者如多数分子预测因子研究（样本量要小 100 倍）[15]。",
+      "marks": [
+        {
+          "text": "The smaller the studies conducted in a scientific field, the less likely the research findings are to be true",
+          "kind": "thesis"
+        },
+        {
+          "text": "other factors being equal",
+          "kind": "concession"
+        },
+        {
+          "text": "randomized controlled trials in cardiology (several thousand subjects randomized)",
+          "kind": "evidence"
+        }
+      ],
+      "note": {
+        "function": "由模型推出分论点",
+        "role": "对应公式中的效能 1 − β：样本小，效能低，PPV 低。它与推论 2 是同一个参数的两个来源。",
+        "technique": "每条推论都是同一个三步结构：先陈述命题，再指回公式里的某个参数，最后举一对正反领域作例子。六条读下来，读者会把这个结构当成推导本身。"
+      }
+    },
+    {
+      "id": "p11",
+      "from": "Corollary 2:",
+      "zh": "推论 2：一个科学领域的效应量越小，研究发现为真的可能性越低。效能也与效应量有关。因此，效应大的领域，例如吸烟对癌症或心血管疾病的影响（相对危险度 3–20），其研究发现比假定效应很小的领域更可能为真，后者如多基因疾病的遗传危险因素（相对危险度 1.1–1.5）[7]。现代流行病学越来越不得不瞄准更小的效应量 [16]。于是，真实研究发现所占的比例预计会下降。循着同样的思路，如果一个领域的真实效应量非常小，这个领域很可能被几乎无处不在的假阳性主张所困扰。例如，如果复杂疾病的大多数真实遗传或营养决定因素带来的相对危险度都小于 1.05，那么遗传流行病学或营养流行病学在很大程度上将是空中楼阁。",
+      "marks": [
+        {
+          "text": "The smaller the effect sizes in a scientific field, the less likely the research findings are to be true",
+          "kind": "thesis"
+        },
+        {
+          "text": "relative risks 3–20",
+          "kind": "evidence"
+        },
+        {
+          "text": "relative risks 1.1–1.5",
+          "kind": "evidence"
+        }
+      ],
+      "note": {
+        "function": "由模型推出分论点",
+        "role": "同样对应效能 1 − β：效应小，效能低，PPV 低。它为“偏倚的度量”一节里的营养流行病学例子埋下伏笔。",
+        "technique": "用吸烟与癌症这个公认为真的大效应作正面例子，读者不会质疑；反面例子因此也顺带获得了可信度。",
+        "doubt": "末句“相对危险度都小于 1.05”是一个条件句，文中没有说这个条件是否成立。结论“空中楼阁”的分量很重，但它只在这个未经论证的假设下才成立。"
+      }
+    },
+    {
+      "id": "p12",
+      "from": "Corollary 3:",
+      "zh": "推论 3：一个科学领域检验的关系数量越多、筛选越少，研究发现为真的可能性越低。如前所示，一项发现为真的研究后概率（PPV）在很大程度上取决于研究前比率（R）。因此，验证性设计（如大型 III 期随机对照试验或其荟萃分析）的研究发现，比生成假设的实验更可能为真。那些因为汇集和检验了海量信息而被视为信息量大、富有创造性的领域，例如微阵列及其他高通量的发现导向型研究 [4,8,17]，PPV 应当极低。",
+      "marks": [
+        {
+          "text": "The greater the number and the lesser the selection of tested relationships in a scientific field, the less likely the research findings are to be true",
+          "kind": "thesis"
+        },
+        {
+          "text": "confirmatory designs",
+          "kind": "concept"
+        },
+        {
+          "text": "hypothesis-generating experiments",
+          "kind": "concept"
+        }
+      ],
+      "note": {
+        "function": "由模型推出分论点",
+        "role": "对应研究前比率 R。这是六条推论中分量最重的一条，因为图 1、图 2 都显示 R 对 PPV 的影响最大；专栏 1 和表 4 的最后两行是它的数值版本。",
+        "technique": "把“信息量大、富有创造性”这种通常的褒义评价，反过来解读为 R 低的标志，颠倒了读者对高通量研究的直觉评价。"
+      }
+    },
+    {
+      "id": "p13",
+      "from": "Corollary 4:",
+      "zh": "推论 4：一个科学领域在设计、定义、结局指标和分析方式上的灵活性越大，研究发现为真的可能性越低。灵活性增加了把本来的“阴性”结果变成“阳性”结果的可能，也就是增加了偏倚 u。对若干研究设计，如随机对照试验 [18–20] 或荟萃分析 [21,22]，已经有人致力于规范其实施和报告。遵守共同的规范很可能提高真实发现的比例。结局指标也是如此。当结局明确无歧义且得到公认（如死亡）时，真实发现可能比使用五花八门的自拟结局指标（如精神分裂症结局量表）时更常见 [23]。同样，使用公认的定型分析方法（如 Kaplan-Meier 曲线和 log-rank 检验）[24] 的领域，其真实发现的比例可能高于分析方法仍在试验之中（如人工智能方法）而且只报告“最佳”结果的领域。尽管如此，即使在最严格的研究设计中，偏倚似乎仍是一个大问题。例如，有强有力的证据表明，选择性结局报告，即操纵所报告的结局和分析，即使在随机试验中也很常见 [25]。仅仅取消选择性发表并不能消除这个问题。",
+      "marks": [
+        {
+          "text": "The greater the flexibility in designs, definitions, outcomes, and analytical modes in a scientific field, the less likely the research findings are to be true",
+          "kind": "thesis"
+        },
+        {
+          "text": "selective outcome reporting, with manipulation of the outcomes and analyses reported, is a common problem even for randomized trails",
+          "kind": "evidence"
+        },
+        {
+          "text": "Simply abolishing selective publication would not make this problem go away",
+          "kind": "concession"
+        }
+      ],
+      "note": {
+        "function": "由模型推出分论点",
+        "role": "对应偏倚 u 的第一个来源：方法上的自由度。它与“如何改善”一节中的注册和方案规范相呼应，那里的对策正是为了压缩这里说的灵活性。",
+        "technique": "先承认随机对照试验等设计已有规范，再用 [25] 的证据说明连这类设计也有选择性报告。最严格的情形尚且如此，其他领域的情况就不必逐一论证了。"
+      }
+    },
+    {
+      "id": "p14",
+      "from": "Corollary 5:",
+      "zh": "推论 5：一个科学领域的经济利益及其他利益和成见越大，研究发现为真的可能性越低。利益冲突和成见可能增加偏倚 u。利益冲突在生物医学研究中非常普遍 [26]，而且通常报告得既不充分又很零散 [26,27]。成见未必有经济上的根源。某个领域的科学家可能纯粹因为信奉某种科学理论，或者执着于自己的发现而怀有成见。许多看似独立、以大学为依托的研究，其开展可能只是为了让医生和研究者获得晋升或终身教职的资格。这类非经济的冲突同样可能导致报告的结果和解读被扭曲。声望卓著的研究者可能通过同行评议压制与自己的发现相抵触的结果，使其无法发表和传播，从而让所在领域不断延续错误的教条。关于专家意见的经验证据表明，它极不可靠 [28]。",
+      "marks": [
+        {
+          "text": "The greater the financial and other interests and prejudices in a scientific field, the less likely the research findings are to be true",
+          "kind": "thesis"
+        },
+        {
+          "text": "Conflicts of interest are very common in biomedical research",
+          "kind": "evidence"
+        },
+        {
+          "text": "nonfinancial conflicts",
+          "kind": "concept"
+        },
+        {
+          "text": "Empirical evidence on expert opinion shows that it is extremely unreliable",
+          "kind": "evidence"
+        }
+      ],
+      "note": {
+        "function": "由模型推出分论点",
+        "role": "对应偏倚 u 的第二个来源：动机。推论 4 说的是研究者“能够”扭曲结果，这一条说的是研究者“想要”扭曲结果。",
+        "technique": "把“利益冲突”从经济利益扩展到理论信念、职称晋升和学术声望，这样连没有企业资助的大学研究也落入了论证范围。",
+        "doubt": "关于晋升动机和权威压制异见的几句话没有引用文献，是作者的判断。段末引用的 [28] 讲的是专家的治疗推荐滞后于荟萃分析的证据，它能说明专家意见不可靠，但不能直接证明专家通过同行评议压制了相反的结果。"
+      }
+    },
+    {
+      "id": "p15",
+      "from": "Corollary 6:",
+      "zh": "推论 6：一个科学领域越热门（参与的研究团队越多），研究发现为真的可能性越低。这条看似悖谬的推论之所以成立，是因为如前所述，当许多研究团队投入同一领域时，孤立发现的 PPV 会下降。这也许可以解释，为什么在广受关注的领域里，我们时而看到极大的兴奋，随后很快又是严重的失望。当许多团队在同一领域工作、产出海量实验数据时，抢在竞争对手之前至关重要。于是，每个团队都可能优先追求并发布自己最引人注目的“阳性”结果。只有当别的团队已经在同一问题上发现“阳性”关联时，“阴性”结果才可能变得值得发表。在那种情况下，反驳某份权威期刊上的主张可能很有吸引力。有人造了“普罗透斯现象”（Proteus phenomenon）一词，来描述这种极端的研究主张与截然相反的反驳迅速交替出现的现象 [29]。经验证据表明，这种两极交替在分子遗传学中十分常见 [29]。",
+      "marks": [
+        {
+          "text": "The hotter a scientific field (with more scientific teams involved), the less likely the research findings are to be true",
+          "kind": "thesis"
+        },
+        {
+          "text": "This seemingly paradoxical corollary",
+          "kind": "concession"
+        },
+        {
+          "text": "Proteus phenomenon",
+          "kind": "concept"
+        },
+        {
+          "text": "this sequence of extreme opposites is very common in molecular genetics",
+          "kind": "evidence"
+        }
+      ],
+      "note": {
+        "function": "由模型推出分论点",
+        "role": "对应研究数 n，来自“多个独立团队的检验”一节的公式。六条推论到此把模型的四个参数（效能、R、u、n）全部用到。",
+        "technique": "先自己点出“看似悖谬”，再用竞争和抢发的机制解释它。读者原本的直觉是“研究的人多，结论更可靠”，这样处理后反而成了论点的助力。",
+        "doubt": "这条推论继承了前面公式的前提：人们只看那一项显著的研究。但本段描述的普罗透斯现象恰恰是别的团队很快发表了相反的结果，也就是孤立的发现得到了纠正。热门领域的纠错速度更快这一面，文中没有计入。"
+      }
+    },
+    {
+      "id": "p16",
+      "from": "These corollaries consider each factor separately",
+      "zh": "这些推论是逐个因素分别考虑的，但这些因素往往相互影响。例如，在人们认为真实效应量很小的领域工作的研究者，可能比在人们认为真实效应量很大的领域工作的研究者更倾向于开展大型研究。或者，成见可能在热门领域盛行，进一步削弱其研究发现的预测价值。成见很深的利益相关者甚至可能筑起一道屏障，使获取和传播相反结果的努力半途而废。反过来，一个领域热门或有强大的既得利益，有时也可能促成更大规模的研究和更高的研究标准，从而提高其研究发现的预测价值。或者，大规模的发现导向型检验可能产出大量显著关系，以至于研究者有足够的内容可以报告和继续探索，因而不再去做数据挖掘和操纵。",
+      "marks": [
+        {
+          "text": "these factors often influence each other",
+          "kind": "concession"
+        },
+        {
+          "text": "may sometimes promote larger studies and improved standards of research",
+          "kind": "concession"
+        }
+      ],
+      "note": {
+        "function": "限定推论的适用条件",
+        "role": "给六条推论加上共同的限定：它们各自都是“其他因素相同”时的结论，而现实中各因素相互牵连，方向有时相反。",
+        "technique": "正反两个方向的相互作用各举了例子，没有只挑对自己有利的一面。",
+        "doubt": "既然承认热门和利益有时会提高研究质量，推论 5、6 的方向就不是确定的。文中没有说明哪个方向的作用更强，下一节的表 4 也没有把这种相互作用计算在内。"
+      }
+    }
+  ]
+}

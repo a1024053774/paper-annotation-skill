@@ -1,0 +1,56 @@
+{
+  "title": "Testing by Several Independent Teams",
+  "title_zh": "多个独立团队的检验",
+  "blocks": [
+    {
+      "id": "p8",
+      "from": "Several independent teams may be addressing",
+      "zh": "可能有多个独立团队在研究同一组问题。随着研究活动的全球化，若干团队（往往有几十个）探查相同或相似的问题几乎已成常态。遗憾的是，在某些领域，迄今流行的思路一直是聚焦于单个团队的孤立发现，并且孤立地解读实验结果。越来越多的问题上至少有一项研究声称有所发现，而人们的注意力只落在这一项上。在针对同一问题的若干项研究中，至少有一项声称得到统计显著发现的概率很容易估计。对 n 项效能相同的独立研究，其 2 × 2 表见表 3：PPV = R(1 − βⁿ)/(R + 1 − [1 − α]ⁿ − Rβⁿ)（不考虑偏倚）。随着独立研究数量增加，PPV 趋于下降，除非 1 − β < α，即通常 1 − β < 0.05。图 2 展示了不同效能水平和不同研究前比率下的情形。对 n 项效能不同的研究，βⁿ 一项换成 i 从 1 到 n 的各 βᵢ 之积，但推断是类似的。",
+      "marks": [
+        {
+          "text": "For n independent studies of equal power",
+          "kind": "method"
+        },
+        {
+          "text": "not considering bias",
+          "kind": "concession"
+        },
+        {
+          "text": "With increasing number of independent studies, PPV tends to decrease",
+          "kind": "thesis"
+        }
+      ],
+      "note": {
+        "function": "扩展模型：加入多团队",
+        "role": "模型的第二项扩展，引入研究数 n。推论 6（领域越热，发现越不可信）直接由这里的公式得出。",
+        "technique": "把“多个团队同时研究”转化为统计学里熟悉的多重检验问题：n 个团队各检验一次，等于对同一假设检验了 n 次。",
+        "doubt": "公式计算的是“n 项研究中至少一项显著”时关系为真的概率，其余 n − 1 项的结果被当作不存在。这只适用于人们确实只看那一项显著结果的情形；如果把 n 项研究放在一起看，研究越多证据反而越充分。“PPV 随研究数增加而下降”因此依赖一个关于读者行为的前提（“只落在这一项上”），而这个前提文中没有给出证据。"
+      }
+    },
+    {
+      "type": "figure",
+      "id": "t3",
+      "label": "Table 3",
+      "image": "table3.png",
+      "caption_en": "Table 3. Research Findings and True Relationships in the Presence of Multiple Studies",
+      "caption_zh": "表 3 存在多项研究时的研究发现与真实关系",
+      "note": {
+        "function": "给出推导依据",
+        "role": "多研究 PPV 公式的来源。“是”一行的含义变成了“n 项研究中至少一项得到显著结果”。"
+      }
+    },
+    {
+      "type": "figure",
+      "id": "f2",
+      "label": "Figure 2",
+      "image": "fig2.png",
+      "caption_en": "Figure 2. PPV (Probability That a Research Finding Is True) as a Function of the Pre-Study Odds for Various Numbers of Conducted Studies, n — Panels correspond to power of 0.20, 0.50, and 0.80.",
+      "caption_zh": "图 2 不同研究数量 n 下，PPV（研究发现为真的概率）随研究前比率变化的曲线。三幅子图分别对应效能 0.20、0.50 和 0.80。",
+      "note": {
+        "function": "把公式画成曲线",
+        "role": "支撑上一段“研究越多，PPV 越低”：n = 50 的曲线在三幅子图里都最低。",
+        "technique": "版式和配色与图 1 完全一致，读者自然把“研究数量多”与“偏倚大”看成两种同类的损害。"
+      }
+    }
+  ]
+}

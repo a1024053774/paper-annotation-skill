@@ -1,0 +1,57 @@
+[Fictional sample text written for this skill's example. The study, numbers and references are invented.]
+
+Does Marginal Annotation Improve Comprehension of Argumentative Texts?
+A Classroom Study
+
+A. Sample and B. Example
+
+1. Introduction
+
+Students are routinely told to annotate what they read, yet the advice rests on
+surprisingly little evidence. Most studies of annotation measure recall of iso-
+lated facts, not whether a reader can reconstruct the argument a text makes.
+
+We use the term argument map for a reader’s account of which claims a text
+defends and which reasons support each claim. An argument map is not a summary:
+a summary may be accurate while leaving the structure of support entirely implicit.
+
+We argue that marginal annotation improves comprehension only when it forces the
+reader to label the function of each paragraph. Annotation that merely highlights
+or paraphrases, we will show, adds little beyond rereading.
+
+2. Method and Results
+
+We assigned 126 second-year undergraduates at one university to three conditions:
+functional annotation, free highlighting, and rereading. All participants read the
+same 2,400-word philosophical essay and, two days later, drew an argument map
+from memory, which two raters scored blind to condition.
+
+    score = (correct claims + correct support links) / (total claims + total support links)
+
+Table 1. Mean argument-map scores by condition (standard deviations in parentheses).
+
+Functional annotators scored 0.71 on average, against 0.52 for highlighters and
+0.49 for rereaders. The difference between highlighting and rereading was not statis-
+tically significant, whereas functional annotation outperformed both (p < .01).
+
+3. Objections and Conclusion
+
+    Labeling paragraphs is slow, and slow reading is simply more reading; the
+    benefit you observe may be time on task under another name.
+
+This objection has force, and we cannot fully exclude it. However, functional
+annotators spent on average only four minutes longer than rereaders, and within
+the functional group time spent did not predict scores. It therefore seems unlikely
+that time alone explains the effect, although a design that fixes reading time
+would settle the matter.
+
+Annotation, then, is not one practice but several, and only the kind that makes
+structure explicit appears to help. Teachers who recommend annotation should say
+which kind they mean.
+
+References
+
+[1] Placeholder, A. (n.d.). A fictional reference that exists only so that the coverage
+report has a long passage of source text that no block of the page includes.
+[2] Placeholder, B. (n.d.). A second fictional reference with the same purpose as the
+first one, long enough to pass the reporting threshold on its own.

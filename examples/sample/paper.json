@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Does Marginal Annotation Improve Comprehension of Argumentative Texts? A Classroom Study",
+    "title_zh": "页边批注能否提高对论证性文本的理解？一项课堂研究",
+    "authors": "A. Sample, B. Example",
+    "source": "虚构样例，仅用于演示本 skill"
+  },
+  "sections": [
+    {
+      "title": "1. Introduction",
+      "title_zh": "引言",
+      "blocks": [
+        {
+          "id": "p1",
+          "en": "Students are routinely told to annotate what they read, yet the advice rests on surprisingly little evidence. Most studies of annotation measure recall of isolated facts, not whether a reader can reconstruct the argument a text makes.",
+          "zh": "老师总是要求学生边读边做批注，但这条建议背后的证据少得出人意料。多数批注研究测量的是对零散事实的回忆，而不是读者能否重建文本所作的论证。",
+          "marks": [
+            { "text": "the advice rests on surprisingly little evidence", "kind": "concession" }
+          ],
+          "note": {
+            "function": "引出问题",
+            "role": "指出现有研究的空白：测的是事实回忆，不是论证重建。¶2 的概念和 ¶4 的因变量都从这个空白出发。",
+            "technique": "先承认批注是通行做法，再指出它缺证据，把一条常识变成了待检验的问题。"
+          }
+        },
+        {
+          "id": "p2",
+          "en": "We use the term argument map for a reader’s account of which claims a text defends and which reasons support each claim. An argument map is not a summary: a summary may be accurate while leaving the structure of support entirely implicit.",
+          "zh": "我们用“论证图”（argument map）指读者对如下内容的说明：文本为哪些主张辩护，每个主张又由哪些理由支撑。论证图不同于摘要：一份摘要可以内容准确，却完全没有交代支撑关系的结构。",
+          "marks": [
+            { "text": "argument map", "kind": "concept" },
+            { "text": "An argument map is not a summary", "kind": "concept" }
+          ],
+          "note": {
+            "function": "界定概念",
+            "role": "给出全文的测量对象。¶1 说旧研究测错了东西，这里说明该测什么，¶4 的评分方式据此而来。",
+            "technique": "用“不是摘要”作反面界定，提前排除了“摘要写得好就算理解了”这种读法。"
+          }
+        },
+        {
+          "id": "p3",
+          "en": "We argue that marginal annotation improves comprehension only when it forces the reader to label the function of each paragraph. Annotation that merely highlights or paraphrases, we will show, adds little beyond rereading.",
+          "zh": "我们认为，页边批注只有在迫使读者标出每一段的功能时，才会提高理解。我们将说明，仅仅划线或转述的批注，效果与重读相差无几。",
+          "marks": [
+            { "text": "marginal annotation improves comprehension only when it forces the reader to label the function of each paragraph", "kind": "thesis" }
+          ],
+          "note": {
+            "function": "提出论点",
+            "role": "全文的核心主张，分成两半：功能批注有效，其他批注无效。¶5 的两组对比分别对应这两半，¶8 回到这里收束。",
+            "technique": "主张带有限定条件（only when），比“批注有用”更窄，也更容易被数据检验。"
+          }
+        }
+      ]
+    },
+    "sec-02.json",
+    {
+      "title": "3. Objections and Conclusion",
+      "title_zh": "异议与结论",
+      "blocks": [
+        {
+          "id": "p6",
+          "style": "quote",
+          "en": "Labeling paragraphs is slow, and slow reading is simply more reading; the benefit you observe may be time on task under another name.",
+          "zh": "给段落贴标签很费时间，而读得慢无非就是读得多；你们观察到的好处，也许只是换了个名字的“投入时间”。",
+          "marks": [
+            { "text": "the benefit you observe may be time on task under another name", "kind": "concession" }
+          ],
+          "note": {
+            "function": "陈述异议",
+            "role": "针对 ¶5 的结果提出替代解释：起作用的是阅读时间，不是批注方式。¶7 专门回应它。",
+            "technique": "用引文的形式让异议以最强的说法出现，没有把它弱化之后再反驳。"
+          }
+        },
+        {
+          "id": "p7",
+          "en": "This objection has force, and we cannot fully exclude it. However, functional annotators spent on average only four minutes longer than rereaders, and within the functional group time spent did not predict scores. It therefore seems unlikely that time alone explains the effect, although a design that fixes reading time would settle the matter.",
+          "zh": "这一异议有分量，我们无法完全排除。不过，功能批注组平均只比重读组多用四分钟，而且在功能批注组内部，所用时间并不能预测得分。因此，仅凭时间似乎不太可能解释这一效应，尽管要彻底解决这个问题，还需要一个固定阅读时间的设计。",
+          "marks": [
+            { "text": "we cannot fully exclude it", "kind": "concession" },
+            { "text": "only four minutes longer than rereaders", "kind": "evidence" },
+            { "text": "time spent did not predict scores", "kind": "evidence" }
+          ],
+          "note": {
+            "function": "反驳异议",
+            "role": "回应 ¶6，保住 ¶5 对 ¶3 的支撑。结论的语气从“证明”降到“似乎不太可能”，与证据的强度相称。",
+            "technique": "先让步再转折，并用两条独立的证据回应：组间时间差很小，组内时间与得分无关。",
+            "doubt": "“组内时间不能预测得分”没有给出相关系数或样本量。每组约 42 人时，检验力可能不足以发现中等大小的关系，“未发现”不等于“不存在”。"
+          }
+        },
+        {
+          "id": "p8",
+          "en": "Annotation, then, is not one practice but several, and only the kind that makes structure explicit appears to help. Teachers who recommend annotation should say which kind they mean.",
+          "zh": "由此看来，批注不是一种做法，而是好几种，其中似乎只有让结构显现出来的那一种才有帮助。建议学生做批注的教师，应当说明自己指的是哪一种。",
+          "marks": [
+            { "text": "only the kind that makes structure explicit appears to help", "kind": "thesis" }
+          ],
+          "note": {
+            "function": "总结并给出建议",
+            "role": "重述 ¶3 的主张，并回答 ¶1 提出的问题：通行的建议太笼统，需要区分批注的种类。",
+            "technique": "结论用了“appears to”，保留了 ¶7 承认的不确定性，没有在结尾把话说满。"
+          }
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    { "en": "argument map", "zh": "论证图", "note": "读者对“主张与支撑理由”的结构化说明，区别于摘要" },
+    { "en": "functional annotation", "zh": "功能批注", "note": "标出每段在论证中起什么作用的批注" },
+    { "en": "time on task", "zh": "投入时间", "note": "教育研究用语，指花在任务上的时间" }
+  ],
+  "overview": {
+    "skeleton": [
+      { "stage": "问题", "text": "批注是通行的阅读建议，但已有研究只测事实回忆，没有测读者能否重建论证。", "refs": ["p1", "p2"] },
+      { "stage": "论点", "text": "只有迫使读者标出段落功能的批注才提高理解；划线和转述与重读无异。", "refs": ["p3"] },
+      { "stage": "证据", "text": "126 名本科生分三组，功能批注组论证图得分 0.71，显著高于划线组 0.52 和重读组 0.49，后两组无显著差异。", "refs": ["p4", "t1", "p5"] },
+      { "stage": "反驳", "text": "针对“只是多花了时间”的异议：组间仅差四分钟，组内时间不预测得分；作者承认无法完全排除。", "refs": ["p6", "p7"] },
+      { "stage": "结论", "text": "批注应按种类区分，建议批注的教师要说明指的是哪一种。", "refs": ["p8"] }
+    ],
+    "claim": "批注本身不提高理解，标出每段论证功能的批注才提高。",
+    "strongest": { "text": "三组设计让划线组充当“有批注但不标功能”的对照，0.52 对 0.49 不显著这一结果直接支撑了论点中“only when”的限定。", "ref": "p5" },
+    "weakest": { "text": "对“投入时间”异议的回应依赖一个没有报告统计量的组内分析，作者自己也承认需要固定阅读时间的设计才能定论。", "ref": "p7" }
+  }
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "论文双栏批注"
+  short_description: "把英文论文做成原文高亮、中文意译、逐段批注的双栏 HTML"
+  default_prompt: "用 $paper-annotation 把这篇论文做成双栏批注 HTML，重点呈现论证结构。"
+
+policy:
+  allow_implicit_invocation: false

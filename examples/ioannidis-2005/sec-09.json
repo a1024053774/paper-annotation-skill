@@ -1,0 +1,90 @@
+{
+  "title": "Claimed Research Findings May Often Be Simply Accurate Measures of the Prevailing Bias",
+  "title_zh": "所谓的研究发现往往可能只是对通行偏倚的准确测量",
+  "blocks": [
+    {
+      "id": "p20",
+      "from": "As shown, the majority of modern biomedical research",
+      "zh": "如前所示，现代生物医学研究大多是在真实发现的研究前概率和研究后概率都很低的领域里进行的。假设在某个研究领域，根本没有任何真实的发现有待揭示。科学史告诉我们，过去的科学努力常常耗费在那些完全没有产出真实科学信息的领域里，至少按我们今天的认识是如此。在这样一个“零领域”（null field）里，理想情况下，没有偏倚时所有观察到的效应量都应围绕零值随机波动。观察到的发现偏离纯粹偶然所预期的程度，就完全是对通行偏倚的度量。",
+      "marks": [
+        {
+          "text": "Let us suppose that in a research field there are no true findings at all to be discovered",
+          "kind": "method"
+        },
+        {
+          "text": "null field",
+          "kind": "concept"
+        },
+        {
+          "text": "a pure measure of the prevailing bias",
+          "kind": "thesis"
+        }
+      ],
+      "note": {
+        "function": "提出第二个论点",
+        "role": "把上一节的结论推到极端：如果一个领域的 R 等于 0，那里的全部“发现”就只能来自偏倚和偶然。这是摘要里预告的第二个结论。",
+        "technique": "用思想实验把偏倚从“干扰因素”变成“被测量的对象”：既然真实效应为零，观察到的效应就是偏倚本身的读数。",
+        "doubt": "首句“如前所示”指向表 4，但表 4 展示的是若干假设情形下的 PPV，并没有显示“现代生物医学研究大多”处在低概率区域。这一句把一个有待证明的经验判断当成了已经得到的结果。"
+      }
+    },
+    {
+      "id": "p21",
+      "from": "For example, let us suppose that no nutrients",
+      "zh": "例如，假设没有任何营养素或膳食模式真的是某种肿瘤发病风险的重要决定因素。再假设科学文献考察了 60 种营养素，并声称它们全都与这种肿瘤的发病风险有关，摄入量最高三分位与最低三分位相比，相对危险度在 1.2 到 1.4 之间。那么，这些所谓的效应量测量的不是别的，正是产生这批文献的过程中卷入的净偏倚。所谓的效应量其实是对净偏倚最准确的估计。由此甚至可以推出，在各个“零领域”之间，那些声称效应更强的领域（往往还伴随着对医学或公共卫生重要性的宣称），不过是偏倚最严重的领域。",
+      "marks": [
+        {
+          "text": "let us suppose that no nutrients or dietary patterns are actually important determinants",
+          "kind": "method"
+        },
+        {
+          "text": "Claimed effect sizes are in fact the most accurate estimates of the net bias",
+          "kind": "thesis"
+        }
+      ],
+      "note": {
+        "function": "举例说明",
+        "role": "给“零领域”一个具体的样子，承接推论 2 中对营养流行病学的怀疑。",
+        "technique": "例子是假设性的，却选了读者最容易联想到现实的营养与癌症研究。作者没有断言营养流行病学就是零领域，但读者会自己把这一步补上。",
+        "doubt": "整段建立在“假设没有任何营养素重要”之上，文中没有提供判断一个真实领域是否为零领域的办法。如果无法事先知道，这个论证就只能说明“若是零领域则如此”，不能用来评价任何具体领域。"
+      }
+    },
+    {
+      "id": "p22",
+      "from": "For fields with very low PPV, the few",
+      "zh": "对于 PPV 很低的领域，为数不多的真实关系不会让这幅整体图景有多大改变。即使有少数关系为真，观察到的效应的分布形态仍然能清楚地度量该领域中的偏倚。这一观念彻底颠倒了我们看待科学结果的方式。传统上，研究者看到效应大而且高度显著，会感到兴奋，把它当作重要发现的标志。而在现代研究的多数领域，效应过大、过于显著，实际上更可能是存在严重偏倚的标志。它们应当促使研究者认真而审慎地思考，自己的数据、分析和结果可能在哪里出了问题。",
+      "marks": [
+        {
+          "text": "Even if a few relationships are true",
+          "kind": "concession"
+        },
+        {
+          "text": "Too large and too highly significant effects may actually be more likely to be signs of large bias",
+          "kind": "thesis"
+        }
+      ],
+      "note": {
+        "function": "推广并得出实践含义",
+        "role": "把“零领域”的结论放宽到“PPV 很低的领域”，使它适用于前面表 4 后几行的情形，并给研究者一条可以操作的建议：对过大的效应先起疑。",
+        "technique": "先处理“并非完全没有真实关系”这个显而易见的反驳，再作推广。",
+        "doubt": "“现代研究的多数领域”再次依赖尚未论证的经验前提。另外，推论 2 说效应大的领域发现更可信，这里又说过大的效应更可能是偏倚的标志，两处的适用条件（真实效应大，还是在低 PPV 领域里观察到大效应）文中没有明确区分。"
+      }
+    },
+    {
+      "id": "p23",
+      "from": "Of course, investigators working in any field",
+      "zh": "当然，无论哪个领域的研究者，都很可能不愿接受自己投入了整个职业生涯的领域竟是一个“零领域”。然而，其他方面的证据，或者技术和实验手段的进步，最终可能导致一个科学领域的瓦解。测得一个领域的净偏倚，或许也有助于了解另一些领域里偏倚的大致范围，只要这些领域有类似的分析方法、技术和利益冲突在起作用。",
+      "marks": [
+        {
+          "text": "investigators working in any field are likely to resist accepting",
+          "kind": "concession"
+        }
+      ],
+      "note": {
+        "function": "预设异议",
+        "role": "预先处理同行可能的抵触，并把“零领域”的用途从批评转为工具：一个领域的偏倚估计可以借给相邻领域参考。这为最后一节“借鉴邻近领域的偏倚”埋了伏笔。",
+        "technique": "把可能的反对意见归因于研究者的职业投入，这与推论 5 关于成见的说法一致。",
+        "doubt": "把异议解释为当事人的心理抗拒，回应的是提出异议的动机，没有回应异议的内容。一个研究者完全可能有实质理由认为自己的领域不是零领域。"
+      }
+    }
+  ]
+}

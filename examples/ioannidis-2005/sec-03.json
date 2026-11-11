@@ -1,0 +1,88 @@
+{
+  "title": "Modeling the Framework for False Positive Findings",
+  "title_zh": "为假阳性发现建立模型框架",
+  "blocks": [
+    {
+      "id": "p3",
+      "from": "Several methodologists have pointed out",
+      "zh": "已有几位方法学家指出 [9–11]，研究发现难以重复（得不到证实）的比例之所以很高，是因为人们采用了一种省事却站不住脚的做法：仅凭一项研究达到形式上的统计显著（通常是 p 值小于 0.05），就宣称得到了确定的研究发现。p 值并不是表述和概括研究的最恰当方式，但遗憾的是，人们普遍认为医学研究论文只需根据 p 值来解读。本文把“研究发现”定义为任何达到形式统计显著的关系，例如有效的干预措施、有信息量的预测因子、危险因素或关联。“阴性”研究同样很有价值。“阴性”其实是个误称，而且这种误解十分普遍。不过，本文针对的是研究者声称存在的关系，而不是零结果。",
+      "marks": [
+        {
+          "text": "Research findings are defined here as any relationship reaching formal statistical significance",
+          "kind": "concept"
+        },
+        {
+          "text": "here we will target relationships that investigators claim exist, rather than null findings",
+          "kind": "method"
+        }
+      ],
+      "note": {
+        "function": "界定概念与范围",
+        "role": "给出全文的分析对象：“研究发现”等于“达到统计显著的关系”。后面的 PPV 公式计算的正是这类发现中有多少为真，所以全文结论的适用范围由这个定义决定。",
+        "technique": "先借方法学界已有的批评立住靶子（单凭一项研究的 p<0.05 下结论），自己的模型就成了对这一批评的量化。",
+        "doubt": "定义把“研究发现”限定为单项研究的显著结果。现实中不少结论建立在多项研究、效应量和机制证据之上，这类结论不在模型覆盖范围内，但标题说的是“已发表的研究发现”，范围比定义宽。"
+      }
+    },
+    {
+      "id": "p4",
+      "from": "As has been shown previously, the probability",
+      "zh": "前人已经证明，一项研究发现确实为真的概率，取决于它为真的先验概率（做研究之前）、研究的统计效能和统计显著性水平 [10,11]。设想一张 2 × 2 表，把研究发现与某个科学领域中真实关系的“金标准”相对照。在一个研究领域里，关于某种关系是否存在，既可以提出真假设，也可以提出假假设。设 R 为该领域所检验的关系中“真实关系”数与“无关系”数之比。R 是领域的特征，变化范围很大：有的领域瞄准的是很可能成立的关系，有的则是在成千上万乃至数百万个可能的假设中寻找一个或寥寥几个真实关系。为便于计算，我们只考虑边界明确的领域：其中要么只有一个真实关系（而可提出的假设很多），要么发现任何一个真实关系的效能都相近。一个关系为真的研究前概率是 R/(R + 1)。一项研究发现真实关系的概率体现为效能 1 − β（1 减去第二类错误率）。在关系并不存在时却声称存在的概率体现为第一类错误率 α。假设该领域共探查 c 个关系，2 × 2 表中各格的期望值见表 1。当一项研究发现因为达到形式统计显著而被提出之后，它为真的研究后概率就是阳性预测值（positive predictive value，PPV）。PPV 也是 Wacholder 等人所说的“假阳性报告概率”的补 [10]。根据这张 2 × 2 表，可得 PPV = (1 − β)R/(R − βR + α)。因此，当 (1 − β)R > α 时，一项研究发现为真的可能性大于为假。由于绝大多数研究者通常采用 α = 0.05，这意味着当 (1 − β)R > 0.05 时，研究发现为真的可能性大于为假。",
+      "marks": [
+        {
+          "text": "the prior probability of it being true",
+          "kind": "method"
+        },
+        {
+          "text": "Let R be the ratio of the number of",
+          "kind": "concept"
+        },
+        {
+          "text": "for computational simplicity",
+          "kind": "method"
+        },
+        {
+          "text": "positive predictive value, PPV",
+          "kind": "concept"
+        },
+        {
+          "text": "more likely true than false if (1 − β)R > α",
+          "kind": "thesis"
+        }
+      ],
+      "note": {
+        "function": "建立基本模型",
+        "role": "全文的数学核心。引入研究前比率 R、效能 1 − β、显著性水平 α 三个量，推出 PPV 公式和“真多于假”的判别条件。后面两节只是往这个公式里加偏倚 u 和研究数 n，六条推论和表 4 全部由它导出。",
+        "technique": "借用诊断试验的框架：把“显著结果”当作一次阳性检测，把“关系为真”当作患病，于是医学读者熟悉的阳性预测值直接适用。患病率低时阳性多半是假阳性，这个直觉被原样搬到科研上。",
+        "doubt": "模型把每个假设二分为“真实关系”和“无关系”，并把显著性当作恰好落在 α 上的二值结果。现实中效应量是连续的，p 值也有大有小（p = 0.001 与 p = 0.049 的证据强度不同），这两处简化都会影响 PPV 的数值；文中只承认了“便于计算”的那一处。"
+      }
+    },
+    {
+      "type": "figure",
+      "id": "t1",
+      "label": "Table 1",
+      "image": "table1.png",
+      "caption_en": "Table 1. Research Findings and True Relationships",
+      "caption_zh": "表 1 研究发现与真实关系",
+      "note": {
+        "function": "给出推导依据",
+        "role": "上一段 PPV 公式的来源：PPV 等于“发现为是”一行中“关系为真”的那一格除以该行合计。"
+      }
+    },
+    {
+      "id": "p5",
+      "from": "What is less well appreciated is",
+      "zh": "人们不太了解的是，偏倚，以及世界各地不同研究团队重复进行独立检验的程度，可能进一步扭曲这幅图景，使研究发现确实为真的概率变得更小。下面我们尝试在类似的 2 × 2 表框架下为这两个因素建模。",
+      "marks": [
+        {
+          "text": "bias and the extent of repeated independent testing by different teams",
+          "kind": "thesis"
+        }
+      ],
+      "note": {
+        "function": "过渡并提出新意",
+        "role": "区分前人的工作和本文的贡献：基本公式来自 [10,11]，偏倚和多团队检验这两项扩展是作者自己的。它引出接下来的两节。",
+        "technique": "用“人们不太了解的是”标出贡献所在，读者由此知道哪部分是转述、哪部分需要重点检验。"
+      }
+    }
+  ]
+}

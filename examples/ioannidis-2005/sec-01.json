@@ -1,0 +1,30 @@
+{
+  "title": "Summary",
+  "title_zh": "摘要",
+  "blocks": [
+    {
+      "id": "p1",
+      "from": "There is increasing concern that most current published",
+      "zh": "越来越多的人担心，当前发表的研究发现大多数是假的。一项研究主张为真的概率，可能取决于研究的检验效能和偏倚、针对同一问题的其他研究的数量，尤其取决于每个科学领域所探查的各种关系中“真实关系”与“无关系”之比。在这一框架下，出现以下情形时，一项研究发现为真的可能性更低：领域内的研究规模较小；效应量较小；被检验的关系数量较多而事先筛选较少；设计、定义、结局指标和分析方式的灵活性较大；经济利益及其他利益和成见较多；以及领域内有更多团队在追逐统计显著性。模拟结果表明，对多数研究设计和研究情境而言，一项研究主张为假的可能性大于为真。此外，在当前的许多科学领域，所谓的研究发现往往可能只是对领域内通行偏倚的准确测量。本文讨论这些问题对研究的实施与解读意味着什么。",
+      "marks": [
+        {
+          "text": "the ratio of true to no relationships",
+          "kind": "concept"
+        },
+        {
+          "text": "it is more likely for a research claim to be false than true",
+          "kind": "thesis"
+        },
+        {
+          "text": "simply accurate measures of the prevailing bias",
+          "kind": "thesis"
+        }
+      ],
+      "note": {
+        "function": "预告全文",
+        "role": "按顺序列出全文的三层内容：决定研究发现真假的四个因素（对应建模三节），六种不利情形（对应六条推论），以及两个结论（多数发现为假；所谓发现可能只是偏倚的度量）。",
+        "technique": "摘要里的措辞是“可能性大于”（more likely），比标题“大多数为假”弱一档。标题用断言吸引读者，摘要用概率表述留有余地，读正文时应以后者为准。"
+      }
+    }
+  ]
+}

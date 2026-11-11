@@ -1,0 +1,213 @@
+[
+  {
+    "title": "Summary",
+    "title_zh": "摘要",
+    "items": [
+      {
+        "p": "There is increasing concern that most current published",
+        "zh": "越来越多的人担心，当前发表的研究发现大多数是假的。一项研究主张为真的概率，可能取决于研究的检验效能和偏倚、针对同一问题的其他研究的数量，尤其取决于每个科学领域所探查的各种关系中“真实关系”与“无关系”之比。在这一框架下，出现以下情形时，一项研究发现为真的可能性更低：领域内的研究规模较小；效应量较小；被检验的关系数量较多而事先筛选较少；设计、定义、结局指标和分析方式的灵活性较大；经济利益及其他利益和成见较多；以及领域内有更多团队在追逐统计显著性。模拟结果表明，对多数研究设计和研究情境而言，一项研究主张为假的可能性大于为真。此外，在当前的许多科学领域，所谓的研究发现往往可能只是对领域内通行偏倚的准确测量。本文讨论这些问题对研究的实施与解读意味着什么。",
+        "marks": [
+          { "text": "the ratio of true to no relationships", "kind": "concept" },
+          { "text": "it is more likely for a research claim to be false than true", "kind": "thesis" },
+          { "text": "simply accurate measures of the prevailing bias", "kind": "thesis" }
+        ],
+        "note": {
+          "function": "预告全文",
+          "role": "按顺序列出全文的三层内容：决定研究发现真假的四个因素（对应建模三节），六种不利情形（对应六条推论），以及两个结论（多数发现为假；所谓发现可能只是偏倚的度量）。",
+          "technique": "摘要里的措辞是“可能性大于”（more likely），比标题“大多数为假”弱一档。标题用断言吸引读者，摘要用概率表述留有余地，读正文时应以后者为准。"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Opening",
+    "title_zh": "开篇（原文无小标题）",
+    "untitled": true,
+    "items": [
+      {
+        "p": "Published research findings are sometimes refuted",
+        "zh": "已发表的研究发现有时会被后来的证据推翻，随之而来的是困惑和失望。从临床试验、传统流行病学研究 [1–3] 到最新的分子研究 [4,5]，各类研究设计中都能见到这种推翻和争议。越来越多的人担心，在现代研究中，假的发现可能占已发表研究主张的多数，甚至绝大多数 [6–8]。不过，这并不令人意外。可以证明，大多数声称的研究发现是假的。本文将考察影响这一问题的关键因素，以及由此得出的若干推论。",
+        "marks": [
+          { "text": "sometimes refuted by subsequent evidence", "kind": "evidence" },
+          { "text": "It can be proven that most claimed research findings are false", "kind": "thesis" }
+        ],
+        "note": {
+          "function": "引出问题并亮出论点",
+          "role": "从“研究发现常被推翻”这一经验现象出发，直接给出全文主张。后文的建模三节是这句“可以证明”的兑现，“多数研究设计”一节是它的结论。",
+          "technique": "先引用别人的担忧（[6–8]），再说“这并不令人意外”，把一个经验上的疑虑升级为可以推导的命题。",
+          "doubt": "“It can be proven”承诺的是证明。后文给出的是一个概率模型加上作者设定的参数组合（表 4），结论成立与否取决于这些参数是否符合现实，这比数学意义上的“证明”弱。"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Modeling the Framework for False Positive Findings",
+    "title_zh": "为假阳性发现建立模型框架",
+    "items": [
+      {
+        "p": "Several methodologists have pointed out",
+        "zh": "已有几位方法学家指出 [9–11]，研究发现难以重复（得不到证实）的比例之所以很高，是因为人们采用了一种省事却站不住脚的做法：仅凭一项研究达到形式上的统计显著（通常是 p 值小于 0.05），就宣称得到了确定的研究发现。p 值并不是表述和概括研究的最恰当方式，但遗憾的是，人们普遍认为医学研究论文只需根据 p 值来解读。本文把“研究发现”定义为任何达到形式统计显著的关系，例如有效的干预措施、有信息量的预测因子、危险因素或关联。“阴性”研究同样很有价值。“阴性”其实是个误称，而且这种误解十分普遍。不过，本文针对的是研究者声称存在的关系，而不是零结果。",
+        "marks": [
+          { "text": "Research findings are defined here as any relationship reaching formal statistical significance", "kind": "concept" },
+          { "text": "here we will target relationships that investigators claim exist, rather than null findings", "kind": "method" }
+        ],
+        "note": {
+          "function": "界定概念与范围",
+          "role": "给出全文的分析对象：“研究发现”等于“达到统计显著的关系”。后面的 PPV 公式计算的正是这类发现中有多少为真，所以全文结论的适用范围由这个定义决定。",
+          "technique": "先借方法学界已有的批评立住靶子（单凭一项研究的 p<0.05 下结论），自己的模型就成了对这一批评的量化。",
+          "doubt": "定义把“研究发现”限定为单项研究的显著结果。现实中不少结论建立在多项研究、效应量和机制证据之上，这类结论不在模型覆盖范围内，但标题说的是“已发表的研究发现”，范围比定义宽。"
+        }
+      },
+      {
+        "p": "As has been shown previously, the probability",
+        "zh": "前人已经证明，一项研究发现确实为真的概率，取决于它为真的先验概率（做研究之前）、研究的统计效能和统计显著性水平 [10,11]。设想一张 2 × 2 表，把研究发现与某个科学领域中真实关系的“金标准”相对照。在一个研究领域里，关于某种关系是否存在，既可以提出真假设，也可以提出假假设。设 R 为该领域所检验的关系中“真实关系”数与“无关系”数之比。R 是领域的特征，变化范围很大：有的领域瞄准的是很可能成立的关系，有的则是在成千上万乃至数百万个可能的假设中寻找一个或寥寥几个真实关系。为便于计算，我们只考虑边界明确的领域：其中要么只有一个真实关系（而可提出的假设很多），要么发现任何一个真实关系的效能都相近。一个关系为真的研究前概率是 R/(R + 1)。一项研究发现真实关系的概率体现为效能 1 − β（1 减去第二类错误率）。在关系并不存在时却声称存在的概率体现为第一类错误率 α。假设该领域共探查 c 个关系，2 × 2 表中各格的期望值见表 1。当一项研究发现因为达到形式统计显著而被提出之后，它为真的研究后概率就是阳性预测值（positive predictive value，PPV）。PPV 也是 Wacholder 等人所说的“假阳性报告概率”的补 [10]。根据这张 2 × 2 表，可得 PPV = (1 − β)R/(R − βR + α)。因此，当 (1 − β)R > α 时，一项研究发现为真的可能性大于为假。由于绝大多数研究者通常采用 α = 0.05，这意味着当 (1 − β)R > 0.05 时，研究发现为真的可能性大于为假。",
+        "marks": [
+          { "text": "the prior probability of it being true", "kind": "method" },
+          { "text": "Let R be the ratio of the number of", "kind": "concept" },
+          { "text": "for computational simplicity", "kind": "method" },
+          { "text": "positive predictive value, PPV", "kind": "concept" },
+          { "text": "more likely true than false if (1 − β)R > α", "kind": "thesis" }
+        ],
+        "note": {
+          "function": "建立基本模型",
+          "role": "全文的数学核心。引入研究前比率 R、效能 1 − β、显著性水平 α 三个量，推出 PPV 公式和“真多于假”的判别条件。后面两节只是往这个公式里加偏倚 u 和研究数 n，六条推论和表 4 全部由它导出。",
+          "technique": "借用诊断试验的框架：把“显著结果”当作一次阳性检测，把“关系为真”当作患病，于是医学读者熟悉的阳性预测值直接适用。患病率低时阳性多半是假阳性，这个直觉被原样搬到科研上。",
+          "doubt": "模型把每个假设二分为“真实关系”和“无关系”，并把显著性当作恰好落在 α 上的二值结果。现实中效应量是连续的，p 值也有大有小（p = 0.001 与 p = 0.049 的证据强度不同），这两处简化都会影响 PPV 的数值；文中只承认了“便于计算”的那一处。"
+        }
+      },
+      {
+        "type": "figure",
+        "id": "t1",
+        "label": "Table 1",
+        "image": "table1.png",
+        "caption_en": "Table 1. Research Findings and True Relationships",
+        "caption_zh": "表 1 研究发现与真实关系",
+        "note": {
+          "function": "给出推导依据",
+          "role": "上一段 PPV 公式的来源：PPV 等于“发现为是”一行中“关系为真”的那一格除以该行合计。"
+        }
+      },
+      {
+        "p": "What is less well appreciated is",
+        "zh": "人们不太了解的是，偏倚，以及世界各地不同研究团队重复进行独立检验的程度，可能进一步扭曲这幅图景，使研究发现确实为真的概率变得更小。下面我们尝试在类似的 2 × 2 表框架下为这两个因素建模。",
+        "marks": [
+          { "text": "bias and the extent of repeated independent testing by different teams", "kind": "thesis" }
+        ],
+        "note": {
+          "function": "过渡并提出新意",
+          "role": "区分前人的工作和本文的贡献：基本公式来自 [10,11]，偏倚和多团队检验这两项扩展是作者自己的。它引出接下来的两节。",
+          "technique": "用“人们不太了解的是”标出贡献所在，读者由此知道哪部分是转述、哪部分需要重点检验。"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Bias",
+    "title_zh": "偏倚",
+    "items": [
+      {
+        "p": "First, let us define bias as",
+        "zh": "首先，我们把偏倚定义为设计、数据、分析和呈现等各种因素的组合，这些因素会在本不该产生研究发现的时候产生研究发现。设 u 为这样一类被探查的分析所占的比例：它们本来不会成为“研究发现”，却因为偏倚而被当作研究发现呈现和报告。偏倚不应与随机变异相混淆，后者是指即便研究设计、数据、分析和呈现都完美无缺，仍有一些发现由于偶然而为假。偏倚可以包括在分析或报告结果时做手脚。选择性报告或歪曲报告是这类偏倚的典型形式。我们可以假定 u 与真实关系是否存在无关。这个假定并非不合理，因为通常无法知道哪些关系确实为真。存在偏倚时（表 2），可得 PPV = ([1 − β]R + uβR)/(R + α − βR + u − uα + uβR)，PPV 随 u 增大而下降，除非 1 − β ≤ α，即在多数情况下 1 − β ≤ 0.05。因此，偏倚越大，研究发现为真的机会就明显减小。图 1 展示了不同效能水平和不同研究前比率下的情形。",
+        "marks": [
+          { "text": "the combination of various design, data, analysis, and presentation factors that tend to produce research findings when they should not be produced", "kind": "concept" },
+          { "text": "Bias should not be confused with chance variability", "kind": "concession" },
+          { "text": "We may assume that u does not depend on whether a true relationship exists or not", "kind": "method" },
+          { "text": "with increasing bias, the chances that a research finding is true diminish considerably", "kind": "thesis" }
+        ],
+        "note": {
+          "function": "扩展模型：加入偏倚",
+          "role": "在基本公式中加入参数 u，得到带偏倚的 PPV。推论 4、推论 5 和“偏倚的度量”一节都以这里的 u 为支点。",
+          "technique": "把设计缺陷、选择性报告、数据操纵等性质各异的问题压缩成一个参数 u，换来了可计算性：只要给 u 赋值，就能算出它让 PPV 下降多少。",
+          "doubt": "“u 与关系真假无关”的理由是“通常无法知道哪些关系为真”。但研究者不知道真假，并不意味着偏倚对真假关系的作用相同：例如效应真实存在时，数据本身更容易显著，需要动用偏倚的机会反而少。这个独立性假定没有另外的论证。"
+        }
+      },
+      {
+        "type": "figure",
+        "id": "t2",
+        "label": "Table 2",
+        "image": "table2.png",
+        "caption_en": "Table 2. Research Findings and True Relationships in the Presence of Bias",
+        "caption_zh": "表 2 存在偏倚时的研究发现与真实关系",
+        "note": {
+          "function": "给出推导依据",
+          "role": "带偏倚 PPV 公式的来源，结构与表 1 相同，每格多出由 u 带来的一项。",
+          "doubt": "“发现为是、关系为否”一格印作 cα + uc(1 − α)/(R + 1)，按上下文应为 (cα + uc[1 − α])/(R + 1)，即分子整体除以 R + 1；只有这样，该行三格相加才等于“合计”一格。这是排印上少了括号，不影响正文公式。"
+        }
+      },
+      {
+        "type": "figure",
+        "id": "f1",
+        "label": "Figure 1",
+        "image": "fig1.png",
+        "caption_en": "Figure 1. PPV (Probability That a Research Finding Is True) as a Function of the Pre-Study Odds for Various Levels of Bias, u — Panels correspond to power of 0.20, 0.50, and 0.80.",
+        "caption_zh": "图 1 不同偏倚水平 u 下，PPV（研究发现为真的概率）随研究前比率变化的曲线。三幅子图分别对应效能 0.20、0.50 和 0.80。",
+        "note": {
+          "function": "把公式画成曲线",
+          "role": "支撑上一段“偏倚越大，PPV 越低”的说法：每幅子图里 u 越大的曲线越靠下。同时能看出研究前比率 R 的影响比效能更大，R 接近 0 时所有曲线都贴近 0。",
+          "technique": "横轴只画到 R = 1，即真假假设各占一半。即使在这个对研究者相当有利的位置，u = 0.80 的曲线也只在 50% 上下，图形本身就在替论点说话。"
+        }
+      },
+      {
+        "p": "Conversely, true research findings may occasionally be annulled",
+        "zh": "反过来，真实的研究发现有时也会因为“反向偏倚”而被抹掉。例如，测量误差很大时，关系会淹没在噪声里 [12]；研究者可能没有有效利用数据，或没有注意到统计显著的关系；也可能存在倾向于“埋掉”显著发现的利益冲突 [13]。关于这种反向偏倚在各研究领域发生得有多频繁，目前没有高质量的大规模经验证据。不过，说反向偏倚没有那么常见，大概是公允的。而且，测量误差和数据利用低效的问题很可能越来越少，因为分子时代的技术进步降低了测量误差，研究者处理数据也越来越老练。无论如何，反向偏倚可以用与上述偏倚相同的方式建模。同样，反向偏倚也不应与随机变异相混淆，后者可能使人因偶然而漏掉一个真实关系。",
+        "marks": [
+          { "text": "true research findings may occasionally be annulled because of reverse bias", "kind": "concession" },
+          { "text": "There is no good large-scale empirical evidence", "kind": "concession" },
+          { "text": "it is probably fair to say that reverse bias is not as common", "kind": "concession" }
+        ],
+        "note": {
+          "function": "处理反方向的可能",
+          "role": "预先回应一个异议：偏倚也可能让真发现消失，从而抵消上一段的效应。作者承认它存在，但判断它较少见，因此不纳入后面的计算。",
+          "technique": "主动提出对自己不利的情形并承认缺乏数据，再给出两条理由说明它影响较小，比回避这个问题更有说服力。",
+          "doubt": "作者先承认“没有高质量的大规模经验证据”，随后仍断言反向偏倚“没有那么常见”。同样缺乏证据的情况下，正向偏倚被写进了模型并在表 4 中取到 0.2 至 0.8，反向偏倚被搁置，两者的处理不对称。"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Testing by Several Independent Teams",
+    "title_zh": "多个独立团队的检验",
+    "items": [
+      {
+        "p": "Several independent teams may be addressing",
+        "zh": "可能有多个独立团队在研究同一组问题。随着研究活动的全球化，若干团队（往往有几十个）探查相同或相似的问题几乎已成常态。遗憾的是，在某些领域，迄今流行的思路一直是聚焦于单个团队的孤立发现，并且孤立地解读实验结果。越来越多的问题上至少有一项研究声称有所发现，而人们的注意力只落在这一项上。在针对同一问题的若干项研究中，至少有一项声称得到统计显著发现的概率很容易估计。对 n 项效能相同的独立研究，其 2 × 2 表见表 3：PPV = R(1 − βⁿ)/(R + 1 − [1 − α]ⁿ − Rβⁿ)（不考虑偏倚）。随着独立研究数量增加，PPV 趋于下降，除非 1 − β < α，即通常 1 − β < 0.05。图 2 展示了不同效能水平和不同研究前比率下的情形。对 n 项效能不同的研究，βⁿ 一项换成 i 从 1 到 n 的各 βᵢ 之积，但推断是类似的。",
+        "marks": [
+          { "text": "For n independent studies of equal power", "kind": "method" },
+          { "text": "not considering bias", "kind": "concession" },
+          { "text": "With increasing number of independent studies, PPV tends to decrease", "kind": "thesis" }
+        ],
+        "note": {
+          "function": "扩展模型：加入多团队",
+          "role": "模型的第二项扩展，引入研究数 n。推论 6（领域越热，发现越不可信）直接由这里的公式得出。",
+          "technique": "把“多个团队同时研究”转化为统计学里熟悉的多重检验问题：n 个团队各检验一次，等于对同一假设检验了 n 次。",
+          "doubt": "公式计算的是“n 项研究中至少一项显著”时关系为真的概率，其余 n − 1 项的结果被当作不存在。这只适用于人们确实只看那一项显著结果的情形；如果把 n 项研究放在一起看，研究越多证据反而越充分。“PPV 随研究数增加而下降”因此依赖一个关于读者行为的前提（“只落在这一项上”），而这个前提文中没有给出证据。"
+        }
+      },
+      {
+        "type": "figure",
+        "id": "t3",
+        "label": "Table 3",
+        "image": "table3.png",
+        "caption_en": "Table 3. Research Findings and True Relationships in the Presence of Multiple Studies",
+        "caption_zh": "表 3 存在多项研究时的研究发现与真实关系",
+        "note": {
+          "function": "给出推导依据",
+          "role": "多研究 PPV 公式的来源。“是”一行的含义变成了“n 项研究中至少一项得到显著结果”。"
+        }
+      },
+      {
+        "type": "figure",
+        "id": "f2",
+        "label": "Figure 2",
+        "image": "fig2.png",
+        "caption_en": "Figure 2. PPV (Probability That a Research Finding Is True) as a Function of the Pre-Study Odds for Various Numbers of Conducted Studies, n — Panels correspond to power of 0.20, 0.50, and 0.80.",
+        "caption_zh": "图 2 不同研究数量 n 下，PPV（研究发现为真的概率）随研究前比率变化的曲线。三幅子图分别对应效能 0.20、0.50 和 0.80。",
+        "note": {
+          "function": "把公式画成曲线",
+          "role": "支撑上一段“研究越多，PPV 越低”：n = 50 的曲线在三幅子图里都最低。",
+          "technique": "版式和配色与图 1 完全一致，读者自然把“研究数量多”与“偏倚大”看成两种同类的损害。"
+        }
+      }
+    ]
+  }
+]
